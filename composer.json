@@ -2,7 +2,7 @@
   "name": "sergeich5/helpers",
   "type": "library",
   "require-dev": {
-    "phpunit/phpunit": "^12.0"
+    "phpunit/phpunit": "^10.0"
   },
   "require": {
     "php": "^8.0"
