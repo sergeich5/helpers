@@ -9,6 +9,7 @@
   },
   "autoload": {
     "files": [
+      "src/mb.php",
       "src/number.php",
       "src/number2text.php"
     ]
