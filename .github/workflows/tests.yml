@@ -25,4 +25,4 @@ jobs:
           args: -q --no-ansi --no-interaction --no-scripts --no-progress --ignore-platform-req=ext-*
 
       - name: Execute tests
-        run: composer tests
+        run: composer test
