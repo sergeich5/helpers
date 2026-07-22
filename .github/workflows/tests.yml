@@ -1,0 +1,28 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  tests:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          args: -q --no-ansi --no-interaction --no-scripts --no-progress --ignore-platform-req=ext-*
+
+      - name: Execute tests
+        run: composer tests
