@@ -9,7 +9,8 @@
   },
   "autoload": {
     "files": [
-      "src/number.php"
+      "src/number.php",
+      "src/number2text.php"
     ]
   },
   "scripts": {
