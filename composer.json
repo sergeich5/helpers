@@ -6,10 +6,12 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^10.0",
-    "ext-mbstring": "*"
+    "ext-mbstring": "*",
+    "spatie/laravel-data": "^4.23"
   },
   "autoload": {
     "files": [
+      "src/laravel-data.php",
       "src/mb.php",
       "src/number.php",
       "src/number2text.php",
